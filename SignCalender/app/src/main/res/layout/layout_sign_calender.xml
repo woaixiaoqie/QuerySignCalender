@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#93b300">
+        <ImageView
+            android:id="@+id/sign_calendar_card_back_iv"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_default_press_style"
+            android:paddingRight="6dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="考勤管理"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/whiter_color"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/whiter_color">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@color/whiter_color">
+
+            <ImageView
+                android:id="@+id/sign_calendar_card_left_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/left_last_mounth_img"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_default_press_style"/>
+
+            <TextView
+                android:id="@+id/sign_calendar_card_current_day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="2017年10月"
+                android:textSize="16dp"
+                android:textColor="@color/text_black_color"/>
+
+            <ImageView
+                android:id="@+id/sign_calendar_card_right_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/right_next_mounth_img"
+                android:background="@drawable/button_default_press_style"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_calendar_today_tv"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="今天"
+            android:textColor="#93b300"
+            android:background="@drawable/button_default_press_style"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/whiter_color">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:padding="1dp"
+            android:orientation="vertical"
+            android:background="@color/gray_bg">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="应出勤"
+                android:textColor="@color/text_black_color"
+                android:background="@color/whiter_color"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/whiter_color"/>
+            <TextView
+                android:id="@+id/sign_calendar_need_duty_day_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="30天"
+                android:textColor="@color/text_black_color"
+                android:background="@color/whiter_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="@color/gray_bg">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="已出勤"
+                android:textColor="@color/text_black_color"
+                android:background="@color/whiter_color"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/whiter_color"/>
+            <TextView
+                android:id="@+id/sign_calendar_sign_duty_day_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="28天"
+                android:textColor="@color/text_black_color"
+                android:background="@color/whiter_color"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@mipmap/sign_duty_calendar_book_img"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周日"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周一"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周二"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周三"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周四"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周五"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="周六"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <com.xiaoniup.signcal.views.CalendarCardView
+            android:id="@+id/sign_calendar_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
