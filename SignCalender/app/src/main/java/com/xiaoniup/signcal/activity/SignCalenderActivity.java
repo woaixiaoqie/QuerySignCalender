@@ -3,6 +3,7 @@ package com.xiaoniup.signcal.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 import com.xiaoniup.signcal.R;
@@ -35,6 +36,7 @@ public class SignCalenderActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.layout_sign_calender);
 
         mCurrentYearMonDat_tv = (TextView) findViewById(R.id.sign_calendar_card_current_day_tv);
